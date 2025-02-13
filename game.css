@@ -1,0 +1,207 @@
+/* general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+nav .logo a {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.0em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Game page container */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+#game-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Game elements */
+.seashell-container {
+    margin-bottom: 20px;
+}
+
+#seashell-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.drop-zone {
+    width: 100%;
+    max-width: 500px;
+    height: 120px;
+    background-color: transparent;
+    border: 2px dashed #00b9fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #00b9fe;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.drop-zone:hover {
+    background-color: #52c2ec4a;
+}
+
+.seashell-names {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.seashell-names .draggable {
+    background-color: #52c2ec4a;
+    color: #00b9fe;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 18px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.seashell-names .draggable:hover {
+    color: white;
+    background-color: #00b9fe;
+    transform: scale(1.05);
+}
+
+.seashell-names .draggable:active {
+    opacity: 0.7;
+}
+
+/* end */
+footer {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    z-index: 10;
+    margin-top: auto;
+}
+
+/* Mobile Styles (width <= 768px) */
+@media (max-width: 768px) {
+
+    nav {
+        background-color: #333;
+        padding: 10px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .seashell-names {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .seashell-names .draggable {
+        padding: 20px 30px;
+        font-size: 20px
+    }
+
+    #seashell-img {
+        max-width: 80%;
+    }
+
+    .drop-zone {
+        font-size: 18px;
+    }
+}
+
+/* Desktop Styles (width > 768px) */
+@media (min-width: 769px) {
+    .seashell-names {
+        justify-content: space-evenly;
+    }
+
+    #seashell-img {
+        max-width: 400px;
+    }
+
+    .drop-zone {
+        font-size: 20px;
+    }
+}
