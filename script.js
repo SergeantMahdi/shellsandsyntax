@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const dropZone = document.querySelector(".drop-zone");
     const seashellImage = document.getElementById("seashell-img");
+    const scoreContainer = document.querySelector(".score");
+    
+    //Get the Score element and set it to 0
+    let score = 0
+    scoreContainer.textContent = `Score: ${score}`;
 
     // Define each shell's correct answer and its three options
     const questions = [
@@ -155,6 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
         dropZone.classList.remove("hovered");
     });
 
+ 
     dropZone.addEventListener("drop", (e) => {
         e.preventDefault();
         const draggedItem = document.querySelector(".dragging");
@@ -167,7 +173,8 @@ document.addEventListener("DOMContentLoaded", function () {
             result.textContent = "Correct!";
             result.style.color = "green";
             result.style.fontSize = "30px"; // Increase font size for correct message
-
+            score += 1;
+            scoreContainer.textContent = `Score: ${score}`;
             // Disable the correct answer option
             draggedItem.setAttribute("draggable", "false");
 
