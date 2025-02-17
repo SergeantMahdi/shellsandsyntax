@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const dropZone = document.querySelector(".drop-zone");
     const seashellImage = document.getElementById("seashell-img");
     const scoreContainer = document.querySelector(".score");
-    
+
     //Get the Score element and set it to 0
     let score = 0
     scoreContainer.textContent = `Score: ${score}`;
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
         dropZone.classList.remove("hovered");
     });
 
- 
+
     dropZone.addEventListener("drop", (e) => {
         e.preventDefault();
         const draggedItem = document.querySelector(".dragging");
