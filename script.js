@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             image: "bractechlamysvexillum.jpg",
             correctAnswer: "Bractechlamys vexillum",
-            options: ["Brachtechlamys vexillum", "Bulla punctulata", "Morula spinosa"]
+            options: ["Bractechlamys vexillum", "Bulla punctulata", "Morula spinosa"]
         },
         {
             image: "chicoreusdodongi.jpg",
