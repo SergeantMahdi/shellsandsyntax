@@ -13,9 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // Define each shell's correct answer and its three options
     const questions = [
         {
+            image: "conusvidua.jpg",
+            correctAnswer: "Conus vidua",
+            options: ["Conus vidua", "Conus tulipa", "Conus marmoreus"]
+        },
+        {
             image: "enginalauta.jpg",
             correctAnswer: "Engina lauta",
             options: ["Engina lauta", "Patella caerulea", "Cellana rota"]
+        },
+        {
+            image: "annachlamysreevei.jpg",
+            correctAnswer: "Annachlamys reevei",
+            options: ["Emarginula sicula", "Annachlamys reevei", "Oliva keeni"]
         },
         {
             image: "stellariasolaris.jpg",
@@ -26,6 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
             image: "barycypraeateulerei.jpg",
             correctAnswer: "Barycypraea teulerei",
             options: ["Pilus conicus", "Barycypraea teulerei", "Gibbula ardens"]
+        },
+        {
+            image: "aspamarginata.jpg",
+            correctAnswer: "Aspa marginata",
+            options: ["Engina lauta", "Aspa marginata", "Anatoma crispata"]
         },
         {
             image: "calliostomasimulatum.jpg",
@@ -48,6 +63,11 @@ document.addEventListener("DOMContentLoaded", function () {
             options: ["Bogia labronica", "Corculum cardissa", "Sinezona plicata"]
         },
         {
+            image: "cerithiumvulgatum.jpg",
+            correctAnswer: "Cerithium vulgatum",
+            options: ["Achatina greyi", "Allopeas gracile", "Cerithium vulgatum"]
+        },
+        {
             image: "conustulipa.jpg",
             correctAnswer: "Conus tulipa",
             options: ["Conus tulipa", "Emarginula sicula", "Tectura virginea"]
@@ -56,6 +76,11 @@ document.addEventListener("DOMContentLoaded", function () {
             image: "jujubinuscurinii.jpg",
             correctAnswer: "Jujubinus curinii",
             options: ["Leptochiton scabridus", "Cadulus jeffreysi", "Jujubinus curinii"]
+        },
+        {
+            image: "bivetiellacancellata.jpg",
+            correctAnswer: "Bivetiella cancellata",
+            options: ["Nassa serta", "Muricopsis zeteki", "Bivetiella cancellata"]
         },
         {
             image: "cypraeovulafuscorubra.jpg",
@@ -80,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             image: "astraliumstellare.jpg",
             correctAnswer: "Astralium stellare",
-            options: ["Pecten jacobeus", "Astralium stellare", "Lembulus pellus"]
+            options: ["Pecten jacobeus", "Astralium stellare", "Lembulus pelius"]
         },
         {
             image: "conomurexluhuanus.jpg",
@@ -98,6 +123,11 @@ document.addEventListener("DOMContentLoaded", function () {
             options: ["Sinezona cingulata", "Amoria canaliculata", "Anatoma umbilicata"]
         },
         {
+            image: "chicomurexlaciniatus.jpg",
+            correctAnswer: "Chicomurex laciniatus",
+            options: ["Chicomurex laciniatus", "Cadulus jeffreysi", "Cochlitoma ustulata"]
+        },
+        {
             image: "astraliumprovisorium.jpg",
             correctAnswer: "Astralium provisorium",
             options: ["Astralium provisorium", "Coripia corbis", "Cymbula safiana"]
@@ -111,6 +141,26 @@ document.addEventListener("DOMContentLoaded", function () {
             image: "clivipolliapulchra.jpg",
             correctAnswer: "Clivipollia pulchra",
             options: ["Bolma rugosa", "Clivipollia pulchra", "Gibbula fanulum"]
+        },
+        {
+            image: "bractechlamysvexillum.jpg",
+            correctAnswer: "Bractechlamys vexillum",
+            options: ["Brachtechlamys vexillum", "Bulla punctulata", "Morula spinosa"]
+        },
+        {
+            image: "chicoreusdodongi.jpg",
+            correctAnswer: "Chicoreus dodongi",
+            options: ["Chicoreus dodongi", "Favartia tetragonus", "Scalptia crenifera"]
+        },
+        {
+            image: "colubrariamuricata.jpg",
+            correctAnswer: "Colubraria muricata",
+            options: ["Bulla mabillei", "Colubraria muricata", "Bistolida vasta"]
+        },
+        {
+            image: "conusmarmoreus.jpg",
+            correctAnswer: "Conus marmoreus",
+            options: ["Nevia spirata", "Eupleura nitida", "Conus marmoreus"]
         },
     ];
 
