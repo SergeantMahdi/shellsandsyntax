@@ -62,7 +62,6 @@ body {
     color: white;
     cursor: pointer;
     height: 100%;
-    display: flex;
     align-items: center;
 }
 
